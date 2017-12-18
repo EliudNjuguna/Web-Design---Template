@@ -1,0 +1,271 @@
+/*****************GLOBAL VARIABLES******************/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+/*    font-family: Roboto, Arial, sans-serif;*/
+}
+
+header{
+    background-image: url(../img/people.jpeg);
+    width: 100%;
+    height: 768px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+header::after{
+    content:'';
+    display:block;
+    background: -webkit-linear-gradient(top, #591159 0%, #534784 100%);
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.link-top{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.link-top a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.menu-icon{
+    float: right;
+    width: 40px;
+    direction: rtl;
+    cursor: pointer;
+}
+.menu-icon div{
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 7px;
+    transition: all .3s ease-in-out;
+}
+.menu-icon div:nth-child(2){
+    width: 30px;
+}
+.menu-icon div:nth-child(3){
+    width: 20px;
+}
+.menu-icon:hover div{
+    width: 40px;
+}
+.our-description{
+    width: 70%;
+    margin: 120px auto;
+    text-align: center;
+    color: #fff;
+}
+.our-description h3{
+    font-size: 2em;  
+    font-weight: 100;
+    
+}
+.our-description h1{
+    font-size: 5em;
+    margin-top: 30px;
+    font-weight: 100;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    margin: 30px auto 0;
+}
+.circle-big{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 200px;
+    cursor: pointer;
+}
+.circle-sm{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 200px;
+    margin: 0 auto;
+    transform: scale(.8,.8);
+}
+.circle span{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    
+}
+/*
+.circle span i{
+    margin: 32px 40px;
+    font-size: 40px
+}
+*/
+
+.circle span:before{
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border: 17px transparent solid;
+    border-right-width: 0;
+    border-left-color: #fff;
+    position: absolute;
+    top: 32px;
+    left: 42px;
+    
+}
+nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 45px;
+    cursor: pointer;
+}
+nav ul li {
+    color: #fff;
+    font-size: 1.3em;
+    transition: all .4s ease-in-out;
+}
+nav ul li:hover{
+    opacity: .5;
+}
+main h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 30px 0 70px;
+}
+main ul li:nth-child(1){
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+main ul li img{
+    width:200px;
+    margin: 116px auto;
+    display: block;
+    
+}
+main ul li:nth-child(2){
+    width: 50%;
+    float: right;
+    list-style: none;
+    position: relative;
+}
+main .number{
+    font-size: 15em;
+    font-weight: 100;
+    color: rgba(38,38,38,0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+main ul li div{
+    width: 58%;
+    float: right;
+    margin-top: 120px;
+}
+main ul li div a{
+    font-size: 1.7em;
+    color: #333;
+    text-decoration: none;
+}
+main ul li div p{
+    font-size: 1em;
+    margin-top: 20px;
+    color: #ccc;
+    line-height: 150%;
+}
+section{
+    background-image: url(../img/street.jpeg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+    text-align: center;
+}
+section:after{
+    content:'';
+    display:block;
+    background: -webkit-linear-gradient(top, #591159 0%, #534784 100%);
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.circle1{
+    margin: 70px 550px;
+}
+.circle1 span:before{
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border: 17px transparent solid;
+    border-right-width: 0;
+    border-left-color: #fff;
+    position: absolute;
+    top: 32px;
+    left: 42px;
+    
+}
+section h2{
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+}
+section ul li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+section ul li a{
+    font-size: 2em;
+    text-align: center;
+}
+section ul li a i:hover{
+    opacity: .5s;
+}
+section ul li a i{
+    color: #fff;
+    display: inline-block;
+    margin: 20px;
+    
+}
+footer{
+    width: 100%;
+    height: 40px;
+}
+footer p{
+    line-height: 40px;
+    text-align: center;
+/*    font-style: italic;*/
+    font-size: 1.3em;
+    margin: 10px;
+}
+footer p a{
+    color: #591159;
+}
